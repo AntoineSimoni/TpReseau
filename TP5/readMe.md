@@ -7,7 +7,9 @@ Fait
 2. Préparation Routeurs Cisco
 
 On télécharge l'image disque Cisco
+
 Le réseau utilisé est 10.5.3.0/30,les IP seront 10.5.12.1 et 10.5.12.2 pour les deux routeurs.
+
 Récapitulation des IPs:
 
 
@@ -22,19 +24,26 @@ Récapitulation des IPs:
 
 ## II. Lancement et configuration du lab
 1. Checklist IP VMs
+
 Désactivation de SELinux, la carte NAT déjà désactivée dans le patron.
+
 Puis on défini ip, domaine et ssh.
 
 2. Checklist IP Routeurs
+
 Depuis GNS3(Terminal)
+
 Pour le router1:
 `# ip address 10.5.1.254 255.255.255.0`
 `# hostname router1.tp5.b1`
 
 3. Checklist routes
+
  router1:
  `# ip route 10.5.2.0 255.255.255.0 10.5.12.2`
+
  server1:
+
 Routes
 ```
 [root@server1 ~]# nano /etc/sysconfig/network-scripts/route-eth0
