@@ -5,6 +5,7 @@
 Fait
 
 2. Préparation Routeurs Cisco
+
 On télécharge l'image disque Cisco
 Le réseau utilisé est 10.5.3.0/30,les IP seront 10.5.12.1 et 10.5.12.2 pour les deux routeurs.
 Récapitulation des IPs:
@@ -74,11 +75,15 @@ rtt min/avg/max/mdev = 27.911/30.842/33.774/2.936 ms
 
 # III. DHCP
 1. Mise en place du serveur DHCP
+
 * Renommer la machine
+
 On renomme la machine de manière permanente
 [root@client2 ~]# nano /etc/hostname
 hostname dhcp-net2.tp5.b1
+
 * Installer le serveur DHCP
+
 On active la carte NAT `ifup eth2`
 ```
 [root@client2 ~]# ip a show dev eth2
