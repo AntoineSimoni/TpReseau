@@ -99,12 +99,19 @@ On installe le package DHCP:
 `[root@dhcp-net2 ~]# ifup eth0 && ifdown eth2`
 
 * Démarrer le serveur DHCP
+
 On modifie le fichier de configuration,
+
 puis on le lance
+
 `[root@dhcp-net2 ~]# systemctl start dhcpd`
+
 Afin que ça se lance quand on lance la machine :
+
 `[root@dhcp-net2 ~]# systemctl enable dhcpd`
+
 Puis on vérifie que tout est bon
+
 ```
 [root@dhcp-net2 ~]# systemctl status dhcpd -l
 ● dhcpd.service - DHCPv4 Server Daemon
