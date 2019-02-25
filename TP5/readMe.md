@@ -1,5 +1,5 @@
-###TP5 - Premier pas dans le monde Cisco
-##I. Préparation du lab
+### TP5 - Premier pas dans le monde Cisco
+## I. Préparation du lab
 1. Préparation VMs
 
 Fait
@@ -28,11 +28,11 @@ router2.tp5.b1
 X
 10.5.2.254
 10.5.12.2
-server1.tp5.b1
+server1.tp5.b1 
 10.5.1.10
 X
 X
-##II. Lancement et configuration du lab
+## II. Lancement et configuration du lab
 1. Checklist IP VMs
 Désactivation de SELinux, la carte NAT déjà désactivée dans le patron.
 Puis on défini ip, domaine et ssh.
@@ -85,7 +85,7 @@ rtt min/avg/max/mdev = 27.911/30.842/33.774/2.936 ms
 
 ```
 
-#III. DHCP
+# III. DHCP
 1. Mise en place du serveur DHCP
 * Renommer la machine
 On renomme la machine de manière permanente
